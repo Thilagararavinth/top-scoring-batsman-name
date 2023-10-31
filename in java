@@ -1,0 +1,34 @@
+import java.util.*;
+class gfg
+{
+public static void main(String args[])
+{
+Scanner in=new Scanner(System.in);
+int max=0;
+String bat=" ";
+for(int i=0;i<n;i++)
+{
+String str=in.nextLine();
+String name=" ";
+int run=0;
+String arr[]=str.split(",");
+for(int j=0;j<arr.length;j++)
+{
+if(j==0)
+{
+name=arr[j];
+}
+else
+{
+run=Integer.parseInt(arr[j]);
+}
+}
+if(run>max)
+{
+max=run;
+bat=name;
+}
+}
+System.out.print(bat);
+}
+}

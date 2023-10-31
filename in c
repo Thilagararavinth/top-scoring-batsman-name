@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+int n;
+scanf("%d\n",&n);
+char batsmen[100],bat[100];
+int run=0,score;
+while(scanf("%[^,],%d\n",batsmen,&score)>0)
+{
+if(score>run)
+{
+run=score;
+strcpy(bat,batsmen);
+}
+printf("%s",bat);
+}
+
+}

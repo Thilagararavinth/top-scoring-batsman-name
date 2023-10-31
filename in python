@@ -1,0 +1,11 @@
+n=int(input())
+max=0
+for i in range(n):
+    inp=input().split()
+    for j in range(len(inp)):
+        x,y=inp[j].split(',')
+        y=int(y)
+        if(y>max):
+            max=y
+            top=x
+print(top)
